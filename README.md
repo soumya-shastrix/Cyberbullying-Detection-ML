@@ -1,4 +1,4 @@
-Cyberbullying Detection using Machine Learning
+        Cyberbullying Detection using Machine Learning
 This project focuses on detecting cyberbullying in online messages using machine learning techniques. Social media platforms often contain harmful or abusive comments, and this system helps identify such messages automatically.
 In this project, a dataset of tweets is used to train machine learning models that can classify whether a message contains cyberbullying or not. The text data is first cleaned and prepared, and then converted into numerical features using TF-IDF so that machine learning models can understand the text.
 Different machine learning algorithms are trained and tested to compare their performance in identifying cyberbullying messages.
