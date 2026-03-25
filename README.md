@@ -1,53 +1,92 @@
-        Cyberbullying Detection using Machine Learning
-This project focuses on detecting cyberbullying in online messages using machine learning techniques. Social media platforms often contain harmful or abusive comments, and this system helps identify such messages automatically.
-In this project, a dataset of tweets is used to train machine learning models that can classify whether a message contains cyberbullying or not. The text data is first cleaned and prepared, and then converted into numerical features using TF-IDF so that machine learning models can understand the text.
-Different machine learning algorithms are trained and tested to compare their performance in identifying cyberbullying messages.
-The project also provides a user interface where users can enter a tweet or message and check whether it is classified as cyberbullying or not.
+# Cyberbullying Detection Using Machine Learning
 
-Features
-Data preprocessing and cleaning 
-Text feature extraction using TF-IDF 
-Multiple machine learning classification models 
-Accuracy comparison between models 
-GUI application for message testing 
-Streamlit interface for real-time detection 
+## Problem Statement (Social Media Platforms)
 
-Machine Learning Models Used
-Logistic Regression 
-Support Vector Machine (SVM) 
-Random Forest 
-XGBoost 
-These models are trained on tweet data to predict whether a message contains cyberbullying. 
+With the rapid growth of social media platforms, online communication has increased significantly. However, many users post harmful, abusive, or offensive messages that can lead to cyberbullying. Cyberbullying can negatively affect individuals emotionally and psychologically.
 
-Technologies Used
-Python 
-Scikit-learn 
-Pandas 
-NLTK 
-Tkinter 
-Streamlit 
-Matplotlib 
+Most platforms still depend on manual monitoring of messages, which is:
 
-Dataset
-The dataset used in this project contains tweets labeled as cyberbullying or non-cyberbullying. The model learns patterns from this dataset and uses them to classify new messages. 
+- Time consuming
+- Difficult to monitor large amounts of data
+- Human moderators may miss harmful content
 
+So there is a need for an automatic cyberbullying detection system to identify harmful messages quickly.
 
-How to Run the Project
+---
 
-Clone the repository
+## What We Came Up With (Solution)
 
-git clone https://github.com/yourusername/Cyberbullying-Detection-ML
+We developed a **Cyberbullying Detection System using Machine Learning**.  
+This project helps automatically detect whether a message contains cyberbullying or not.
 
-Install required libraries
+The system processes text data and uses machine learning models to classify messages as **Cyberbullying** or **Non-Cyberbullying**.
 
-pip install pandas numpy scikit-learn nltk xgboost streamlit
-Run the main application
+It provides a GUI-based application where users can enter a message and view the detection result.
 
-python main.py
+---
 
-or run the Streamlit interface
+## Project Workflow
 
-streamlit run stream.py
+1. Load the cyberbullying tweets dataset
+2. Perform text preprocessing (cleaning and removing unwanted characters)
+3. Convert text into numerical features using TF-IDF vectorization
+4. Split the dataset into training and testing sets
+5. Train machine learning models
+6. Compare model performance using accuracy
+7. User enters a message
+8. System predicts whether it is cyberbullying or not
 
-Conclusion
-This project shows how machine learning models can be used to automatically detect cyberbullying messages. Such systems can help reduce harmful online interactions and make digital platforms safe
+---
+
+## Dataset
+
+The dataset contains tweets labeled as cyberbullying or non-cyberbullying.
+
+Dataset includes:
+
+- Tweet text
+- Cyberbullying category
+
+The dataset is used for training and testing the machine learning models.
+
+---
+
+## Model & Evaluation
+
+Machine learning algorithms used:
+
+- Logistic Regression
+- Support Vector Machine (SVM)
+- Random Forest
+- XGBoost
+
+Model performance is evaluated using:
+
+- Accuracy score
+
+---
+
+## Features
+
+- Load and analyze tweet dataset
+- Text preprocessing
+- Train machine learning models
+- Compare model accuracy
+- Predict cyberbullying in user messages
+- GUI application for detection
+
+---
+
+## Tech Stack
+
+- Python
+- Scikit-learn
+- Pandas
+- Tkinter
+- Matplotlib
+
+---
+
+## How to Run
+
+### 1 Install required libraries
