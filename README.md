@@ -87,6 +87,4 @@ Model performance is evaluated using:
 
 ---
 
-## How to Run
 
-### 1 Install required libraries
